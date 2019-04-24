@@ -5,9 +5,13 @@ If you would like to read the Chinese vesion of this readme document, please cli
 
 ## Requirements
 Ubuntu 14.04.1
+
 Python 2.7.15
+
 PyTorch 0.4.0
+
 Other main requirements can be installed by:
+
 cv2, xml, lmdb, fire, multiprocessing, 
 ```
 # 1. install 
