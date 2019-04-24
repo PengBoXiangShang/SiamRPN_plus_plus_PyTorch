@@ -1,6 +1,15 @@
 # SiamRPN++_PyTorch 
 This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **Peng Xu** and **[Jin Feng](https://github.com/JinDouer)**.
 
+## Details of SiamRPN++ Network
+As stated in the original paper, SiamRPN++ network has three parts.
+
+1. **Backbone Network (modified ResNet-50).**
+
+2. **SiamRPN Block.**
+
+3. **Weighted Fusion Layer.** 
+
 ## Requirements
 Ubuntu 14.04.1
 
@@ -22,7 +31,7 @@ pip install fire -c conda-forge
 ```
 
 
-## Usage Instructions
+## Training Instructions
 
 ```
 # 1. Clone this repository to your disk.
@@ -32,13 +41,17 @@ git clone https://github.com/PengBoXiangShang/SiamRPN_plus_plus_PyTorch.git
 cd SiamRPN++_PyTorch
 
 # 3. Download training data. In this project, we provide the downloading and preprocessing scripts for ILSVRC2015_VID dataset. Please download ILSVRC2015_VID dataset (86GB). The cripts for other tracking datasets are coming soon.
+cd data
 wget -c http://bvisionweb1.cs.unc.edu/ilsvrc2015/ILSVRC2015_VID.tar.gz
+tar -xvf ILSVRC2015_VID.tar.gz
+rm ILSVRC2015_VID.tar.gz
+cd ..
 
-# 4. Do some data preprocessings, including cropping, padding, resizing, *etc*. Before , you need to .
+# 4. Preprocess data.
 chmod +x ./preprocessing/create_dataset.sh
 ./preprocessing/create_dataset.sh
 
-# 5. Pack the data into [LMDB](http://www.lmdb.tech/doc/) format.
+# 5. Pack the preprocessed data into LMDB format to accelerate data loading.
 chmod +x ./preprocessing/create_lmdb.sh
 ./preprocessing/create_lmdb.sh
 
