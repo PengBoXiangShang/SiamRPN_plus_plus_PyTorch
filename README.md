@@ -1,7 +1,5 @@
 # SiamRPN++_PyTorch 
-This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **Peng Xu** and **[Jin Feng](www.baidu.com)**.
-
-If you would like to read the Chinese vesion of this readme document, please click [here]().
+This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **Peng Xu** and **[Jin Feng](https://github.com/JinDouer)**.
 
 ## Requirements
 Ubuntu 14.04.1
@@ -13,13 +11,13 @@ PyTorch 0.4.0
 Other main requirements can be installed by:
 
 ```
-# 1. Install *cv2* package.
+# 1. Install cv2 package.
 conda install opencv
 
-# 2. Install *lmdb* package.
+# 2. Install LMDB package.
 conda install lmdb
 
-# 3. Install *fire* package.
+# 3. Install fire package.
 pip install fire -c conda-forge
 ```
 
@@ -28,7 +26,7 @@ pip install fire -c conda-forge
 
 ```
 # 1. Clone this repository to your disk.
-git clone 
+git clone https://github.com/PengBoXiangShang/SiamRPN_plus_plus_PyTorch.git
 
 # 2. Change working directory.
 cd SiamRPN++_PyTorch
@@ -53,3 +51,4 @@ chmod +x ./train.sh
 
 
 ## Acknowledgement
+Many thanks for [Sisi] (https://github.com/noCodegirl) helps us to download the huge ILSVRC2015_VID data.
