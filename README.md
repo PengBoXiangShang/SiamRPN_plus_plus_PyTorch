@@ -12,12 +12,15 @@ PyTorch 0.4.0
 
 Other main requirements can be installed by:
 
-cv2, xml, lmdb, fire, multiprocessing, 
 ```
-# 1. install 
-lmdb
+# 1. Install *cv2* package.
+conda install opencv
 
-# 2. 
+# 2. Install *lmdb* package.
+conda install lmdb
+
+# 3. Install *fire* package.
+pip install fire -c conda-forge
 ```
 
 
