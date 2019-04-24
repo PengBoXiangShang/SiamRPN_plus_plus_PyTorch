@@ -64,4 +64,4 @@ chmod +x ./train.sh
 
 
 ## Acknowledgement
-Many thanks for [Sisi] (https://github.com/noCodegirl) helps us to download the huge ILSVRC2015_VID data.
+Many thanks for [Sisi](https://github.com/noCodegirl) helps us to download the huge ILSVRC2015_VID data.
