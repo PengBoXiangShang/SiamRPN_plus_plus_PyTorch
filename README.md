@@ -1,8 +1,10 @@
+
+
 <table>
    <tr>
       <td colspan = 2 rowspan=2></td>
-      <td colspan = 3>bottleneck in conv4</td>
-      <td colspan = 3>bottleneck in conv5</td>
+      <td colspan = 3 style="text-align: center;">bottleneck in conv4</td>
+      <td colspan = 3 style="text-align: center;">bottleneck in conv5</td>
    </tr>
    <tr>
       <td>conv1x1</td>
@@ -67,8 +69,5 @@
       <td>1</td>
       <td>3</td>
       <td>1</td>
-   </tr>
-   <tr>
-      <td></td>
    </tr>
 </table>
