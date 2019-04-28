@@ -2,7 +2,7 @@
 
 <div align=center><img src="https://github.com/PengBoXiangShang/tiedanernocode/blob/master/illustration/SiamRPN_plus_plus_pipeline.png"/></div>
 
-This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **[Peng Xu](www.pengxu.net)** and **[Jin Feng](https://github.com/JinDouer)**. Our **training** can be conducted on **multi-GPUs**, and use **LMDB** data format to speed up the data loading.
+This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **[Peng Xu](http://www.pengxu.net)** and **[Jin Feng](https://github.com/JinDouer)**. Our **training** can be conducted on **multi-GPUs**, and use **LMDB** data format to speed up the data loading.
 
 This project is designed with these goals:
 - [x] Training on ILSVRC2015_VID dataset.
@@ -91,14 +91,14 @@ As stated in the original paper, SiamRPN++ uses ResNet-50 as backbone by modifyi
 **2. SiamRPN Block**
 Based on our understanding of the original paper, we plot a architecture illustration to describe the *Siamese RPN* block as shown in following.
 
-![SiameseRPNblock](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/illustration/RPN.png)
+<div align=center><img src="https://github.com/PengBoXiangShang/tiedanernocode/blob/master/illustration/RPN.png"/></div>
 
 We also present the detailed configurations of each layer of RPN block in following table. Please see more details in [./network/RPN.py](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/network/RPN.py).
 
 |component|configuration|
 |:---|:---|
-|adj_1 / adj_2 / adj_3 / adj_4|cov2d(256, 256, ksize=3, pad=1, stride=1), BN2d(256)|
-|fusion_module_1 / fusion_module_2|cov2d(256, 256, ksize=1, pad=0, stride=1), BN2d(256), ReLU|
+|adj_1 / adj_2 / adj_3 / adj_4|conv2d(256, 256, ksize=3, pad=1, stride=1), BN2d(256)|
+|fusion_module_1 / fusion_module_2|conv2d(256, 256, ksize=1, pad=0, stride=1), BN2d(256), ReLU|
 |box head|conv2d(256, 4*5, ksize=1, pad=0, stride=1)|
 |cls head|conv2d(256, 2*5, ksize=1, pad=0, stride=1)|
 
