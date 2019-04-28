@@ -14,6 +14,7 @@ This project is designed with these goals:
 As stated in the original paper, SiamRPN++ network has three parts, including Backbone Networks, SiamRPN Blocks, and Weighted Fusion Layers.
 
 **1. Backbone Network (modified ResNet-50)**
+
 As stated in the original paper, SiamRPN++ uses ResNet-50 as backbone by modifying the strides and adding dilated convolutions for *conv4* and *conv5* blocks. Here, we present the detailed comparison between original ResNet-50 and SiamRPN++ ResNet-50 backbone in following table.
 
 <table>
@@ -89,7 +90,8 @@ As stated in the original paper, SiamRPN++ uses ResNet-50 as backbone by modifyi
 </table>
 
 **2. SiamRPN Block**
-Based on our understanding of the original paper, we plot a architecture illustration to describe the *Siamese RPN* block as shown in following.
+
+Based on our understanding to the original paper, we plot a architecture illustration to describe the *Siamese RPN* block as shown in following.
 
 <div align=center><img src="https://github.com/PengBoXiangShang/SiamRPN_plus_plus_Pytorch/blob/master/illustration/RPN.png"/></div>
 
@@ -103,6 +105,7 @@ We also present the detailed configurations of each layer of RPN block in follow
 |cls head|conv2d(256, 2*5, ksize=1, pad=0, stride=1)|
 
 **3. Weighted Fusion Layer** 
+
 We implemente the *weighted fusion layer* via **group convolution operations**. Please see details in [./network/SiamRPN.py](https://github.com/PengBoXiangShang/SiamRPN_plus_plus_Pytorch/blob/master/network/SiamRPN.py)
 
 ## Requirements
