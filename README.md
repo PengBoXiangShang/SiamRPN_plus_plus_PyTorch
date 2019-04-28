@@ -1,6 +1,6 @@
 # SiamRPN++_PyTorch 
 
-![pipeline](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/illustration/SiamRPN_plus_plus_pipeline.png)
+<div align=center>![pipeline](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/illustration/SiamRPN_plus_plus_pipeline.png)
 
 This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **[Peng Xu](www.pengxu.net)** and **[Jin Feng](https://github.com/JinDouer)**. Our **training** can be conducted on **multi-GPUs**, and use **LMDB** data format to speed up the data loading.
 
@@ -93,7 +93,7 @@ Based on our understanding of the original paper, we plot a architecture illustr
 
 ![SiameseRPNblock](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/illustration/RPN.png)
 
-We also present the detailed configurations of each layer of RPN block in following table. Please see more details in [./network/RPN.py].
+We also present the detailed configurations of each layer of RPN block in following table. Please see more details in [./network/RPN.py](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/network/RPN.py).
 
 |component|configuration|
 |:---|:---|
@@ -103,7 +103,7 @@ We also present the detailed configurations of each layer of RPN block in follow
 |cls head|conv2d(256, 2*5, ksize=1, pad=0, stride=1)|
 
 **3. Weighted Fusion Layer** 
-We implemente the *weighted fusion layer* via **group convolution operations**. Please see details in [./network/SiamRPN.py]()
+We implemente the *weighted fusion layer* via **group convolution operations**. Please see details in [./network/SiamRPN.py](https://github.com/PengBoXiangShang/tiedanernocode/blob/master/network/SiamRPN.py)
 
 ## Requirements
 Ubuntu 14.04
