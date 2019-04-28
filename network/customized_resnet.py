@@ -100,7 +100,7 @@ class ResNet(nn.Module):
         self.extra_1x1_conv4 = nn.Conv2d(
             1024, 256, kernel_size=1, stride=1, padding=0, bias=False)
         self.layer4 = self._make_layer(
-            block, planes[3], layers[3], stride=1, groups=groups, norm_layer=norm_layer, padding=3, dilation_ratio=3)
+            block, planes[3], layers[3], stride=1, groups=groups, norm_layer=norm_layer, padding=4, dilation_ratio=4)
         # TODO
         self.extra_1x1_conv5 = nn.Conv2d(
             2048, 256, kernel_size=1, stride=1, padding=0, bias=False)
