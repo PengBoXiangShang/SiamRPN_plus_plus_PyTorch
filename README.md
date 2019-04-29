@@ -136,7 +136,7 @@ pip install fire -c conda-forge
 git clone https://github.com/PengBoXiangShang/SiamRPN_plus_plus_PyTorch.git
 
 # 2. Change working directory.
-cd SiamRPN++_PyTorch
+cd SiamRPN_plus_plus_PyTorch
 
 # 3. Download training data. In this project, we provide the downloading and preprocessing scripts for ILSVRC2015_VID dataset. Please download ILSVRC2015_VID dataset (86GB). The cripts for other tracking datasets are coming soon.
 cd data
