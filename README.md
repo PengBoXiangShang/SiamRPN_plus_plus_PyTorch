@@ -106,7 +106,7 @@ We also present the detailed configurations of each layer of RPN block in follow
 
 **3. Weighted Fusion Layer** 
 
-We implemente the *weighted fusion layer* via **group convolution operations**. Please see details in [./network/SiamRPN.py](https://github.com/PengBoXiangShang/SiamRPN_plus_plus_Pytorch/blob/master/network/SiamRPN.py)
+We implemente the *weighted fusion layer* via **group convolution operations**. Please see details in [./network/SiamRPN.py](https://github.com/PengBoXiangShang/SiamRPN_plus_plus_Pytorch/blob/master/network/SiamRPN.py).
 
 ## Requirements
 Ubuntu 14.04
