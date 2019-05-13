@@ -1,5 +1,7 @@
 # SiamRPN++_PyTorch 
 
+Really sorry for our late reply for all the posted issues. Currently, I am snowed under a very important paper deadline.  Two weeks later, I will answer all the issues.  Many thanks for your attention.
+
 <div align=center><img src="https://github.com/PengBoXiangShang/SiamRPN_plus_plus_Pytorch/blob/master/illustration/SiamRPN_plus_plus_pipeline.png"/></div>
 
 This is an unofficial PyTorch implementation of [SiamRPN++ (CVPR2019)](https://arxiv.org/pdf/1812.11703.pdf), implemented by **[Peng Xu](http://www.pengxu.net)** and **[Jin Feng](https://github.com/JinDouer)**. Our **training** can be conducted on **multi-GPUs**, and use **LMDB** data format to speed up the data loading.
