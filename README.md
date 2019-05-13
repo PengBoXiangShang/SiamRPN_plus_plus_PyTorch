@@ -1,6 +1,6 @@
 # SiamRPN++_PyTorch 
 
-Really sorry for our late reply for all the posted issues. Currently, I am snowed under a very important paper deadline.  Two weeks later, I will answer all the issues.  Many thanks for your attention.
+[May 13, 2019] Really sorry for our late reply for all the posted issues. Currently, I am snowed under a very important paper deadline.  Two weeks later, I would answer all the issues and present further discussion about the training.  Many thanks for your attention.
 
 <div align=center><img src="https://github.com/PengBoXiangShang/SiamRPN_plus_plus_Pytorch/blob/master/illustration/SiamRPN_plus_plus_pipeline.png"/></div>
 
